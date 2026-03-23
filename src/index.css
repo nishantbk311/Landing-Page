@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #081E67;
+  --color-brand-navy: #102359;
+  --color-brand-mint: #3AE39E;
+  --color-brand-teal: #47C6B6;
+
+  --font-sans: "Saira", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Saira", sans-serif;
+}
+
+
+:root {
+  --bg-gradient: radial-gradient(circle at 50% 0%, #102359 0%, #081E67 100%);
+  /* Colors */
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --border: 220 20% 88%;
+  --muted: 220 20% 96%;
+  --muted-foreground: 220 10% 45%;
+  --foreground: 222 47% 11%;
+  --primary: 225 87% 22%;
+  --primary-foreground: 210 40% 98%;
+  --mint: 156 75% 56%;
+}
+
+body {
+  @apply font-sans antialiased bg-brand-dark text-white selection:bg-brand-mint selection:text-brand-dark;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+}
+
+/* Custom Classes Used in Footer */
+.bg-card {
+  background-color: hsl(var(--card));
+}
+
+.border-border {
+  border-color: hsl(var(--border));
+}
+
+.text-muted-foreground {
+  color: hsl(var(--muted-foreground));
+}
+
+.text-foreground {
+  color: hsl(var(--foreground));
+}
+
+.bg-muted {
+  background-color: hsl(var(--muted));
+}
+
+.hover\:bg-primary:hover {
+  background-color: hsl(var(--primary));
+}
+
+.text-primary-foreground {
+  color: hsl(var(--primary-foreground));
+}
+
+.container-custom {
+  max-width: 92rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #47C6B6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
