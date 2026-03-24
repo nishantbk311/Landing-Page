@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl w-full">
         {/* Service Card */}
         <motion.a
-          href="https://leafclutchtech.com.np/"
+          href="https://leafclutch-tech-v2.vercel.app/"
           whileHover={{ y: -12 }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
           initial={{ opacity: 0, x: -30 }}

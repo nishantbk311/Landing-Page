@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
           {/* Desktop Contact Button */}
         <a
-          href="https://leafclutchtech.com.np/contact"
+          href="https://leafclutch-tech-v2.vercel.app/contact"
           className="hidden md:flex"
         >
           <button className="bg-brand-dark cursor-pointer text-white px-6 py-2.5 rounded-lg text-base font-semibold hover:bg-brand-navy transition-all flex items-center gap-2">
@@ -31,7 +31,7 @@ export default function Header() {
 
         {/* Mobile Contact Button */}
         <a
-          href="https://leafclutchtech.com.np/contact"
+          href="https://leafclutch-tech-v2.vercel.app/contact"
           className="md:hidden"
         >
           <button className="bg-brand-dark text-white p-3 rounded-lg flex items-center justify-center gap-2">
