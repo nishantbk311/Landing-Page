@@ -23,13 +23,13 @@ const programs = [
 ];
 
 const services = [
-  { name: "All Services", href: "https://leafclutch-tech-v2.vercel.app/services/all-services" },
-  { name: "Web Development", href: "https://leafclutch-tech-v2.vercel.app/services/web-development" },
-  { name: "Mobile App Development", href: "https://leafclutch-tech-v2.vercel.app/services/mobile-development" },
-  { name: "DevOps Solutions", href: "https://leafclutch-tech-v2.vercel.app/services/devops" },
-  { name: "Cybersecurity", href: "https://leafclutch-tech-v2.vercel.app/services/cybersecurity" },
-  { name: "Data Science & AI", href: "https://leafclutch-tech-v2.vercel.app/services/data-science-ai" },
-  { name: "Digital Marketing", href: "https://leafclutch-tech-v2.vercel.app/services/digital-marketing" },
+  { name: "All Services", href: "https://leafclutchtech.com.np/services/all-services" },
+  { name: "Web Development", href: "https://leafclutchtech.com.np/services/web-development" },
+  { name: "Mobile App Development", href: "https://leafclutchtech.com.np/services/mobile-development" },
+  { name: "DevOps Solutions", href: "https://leafclutchtech.com.np/services/devops" },
+  { name: "Cybersecurity", href: "https://leafclutchtech.com.np/services/cybersecurity" },
+  { name: "Data Science & AI", href: "https://leafclutchtech.com.np/services/data-science-ai" },
+  { name: "Digital Marketing", href: "https://leafclutchtech.com.np/services/digital-marketing" },
 ];
 
 const resources = [
