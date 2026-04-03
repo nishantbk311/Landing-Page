@@ -91,13 +91,13 @@ const EventCarousel: React.FC = () => {
           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 z-30 flex justify-between pointer-events-none -mx-6 md:-mx-16">
             <button 
               onClick={handlePrev}
-              className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-sm border border-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:shadow-md transition-all duration-300 pointer-events-auto"
+              className="w-12 h-12 cursor-pointer rounded-full bg-white/90 backdrop-blur-sm shadow-sm border border-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:shadow-md transition-all duration-300 pointer-events-auto"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button 
               onClick={handleNext}
-              className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm shadow-sm border border-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:shadow-md transition-all duration-300 pointer-events-auto"
+              className="w-12 h-12 cursor-pointer rounded-full bg-white/90 backdrop-blur-sm shadow-sm border border-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-900 hover:shadow-md transition-all duration-300 pointer-events-auto"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
@@ -130,7 +130,7 @@ const EventCarousel: React.FC = () => {
                 setDirection(index > currentIndex ? 1 : -1);
                 setCurrentIndex(index);
               }}
-              className={`h-1 rounded-full transition-all duration-500 ${
+              className={`h-1 rounded-full transition-all duration-500 cursor-pointer ${
                 currentIndex === index ? 'w-8 bg-gray-900' : 'w-2 bg-gray-200 hover:bg-gray-300'
               }`}
             />
@@ -145,7 +145,7 @@ const Card: React.FC<{ event: Event; isActive?: boolean }> = ({ event, isActive 
   return (
     <div className="relative group rounded-[2rem] overflow-hidden bg-white h-[550px] md:h-[700px] border border-gray-50">
       {/* Image */}
-      <div className="absolute inset-0 bg-black">
+      <div className="absolute inset-0 bg-white">
         <img 
           src={event.image} 
           alt={event.title}
